@@ -1,4 +1,4 @@
-image: node:14  # Choose the Node.js version that matches your app's requirements
+image: node:18  # Choose the Node.js version that matches your app's requirements
 
 stages:
   - build
@@ -6,8 +6,7 @@ stages:
   - deploy
 
 variables:
-  # Define environment variables if needed
-  REACT_APP_API_KEY: your-api-key
+ 
 
 before_script:
   - npm install
