@@ -1,0 +1,30 @@
+image: node:14  # Choose the Node.js version that matches your app's requirements
+
+stages:
+  - build
+  - test
+  - deploy
+
+variables:
+  # Define environment variables if needed
+  REACT_APP_API_KEY: your-api-key
+
+before_script:
+  - npm install
+
+build:
+  stage: build
+  script:
+    - npm run build
+
+test:
+  stage: test
+  script:
+    - npm test
+
+deploy:
+  stage: deploy
+  script:
+    - echo "Deploy your app here"  # Add your deployment commands here
+  only:
+    - master  # Deploy only when changes are pushed to the master branch

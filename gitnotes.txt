@@ -1,0 +1,15 @@
+git init          ->to convert a project into git project
+
+
+git add . 
+git commit -m "test"
+
+to sync a git project to remote repository:
+git remote add origin https://github.com/LakshmiVinodShankar/New03OCT23.git 
+ to push the changes:
+
+
+git add . 
+git commit -m "test"
+git branch -M main 
+git push -f origin main
