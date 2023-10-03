@@ -13,7 +13,7 @@ function App() {
 
   return (
     <div>
-      <h1>Lazy Loading Example- Test</h1>
+      <h1>Lazy Loading Example- TestNews</h1>
 
       <button onClick={loadLazyComponent}>Load Lazy Component</button>
 
